@@ -18,11 +18,17 @@ ALLOWED_HOSTS = []
 # 默认包含 Django 提供的内置应用（如 admin、auth 等）。
 # 自定义应用需要手动添加到此列表中。
 INSTALLED_APPS = [
+    # 管理站点。
     'django.contrib.admin',
+    # 身份验证系统。
     'django.contrib.auth',
+    # 内容类型框架。
     'django.contrib.contenttypes',
+    # 会话框架。
     'django.contrib.sessions',
+    # 消息传送框架。
     'django.contrib.messages',
+    # 用于管理静态文件的框架。
     'django.contrib.staticfiles',
 ]
 
@@ -38,7 +44,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# 指定项目的 URL 配置模块。
+# 定义了 Django 项目的主 URL 配置文件路径。
 ROOT_URLCONF = 'mysite.urls'
 
 # 配置模板引擎的选项。
