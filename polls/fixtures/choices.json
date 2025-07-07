@@ -1,0 +1,273 @@
+[
+    {
+      "model": "polls.choice",
+      "pk": 1,
+      "fields": {
+        "question": 1,
+        "choice_text": "Python",
+        "votes": 120
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 2,
+      "fields": {
+        "question": 1,
+        "choice_text": "JavaScript",
+        "votes": 80
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 3,
+      "fields": {
+        "question": 1,
+        "choice_text": "Java",
+        "votes": 50
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 4,
+      "fields": {
+        "question": 2,
+        "choice_text": "Django",
+        "votes": 90
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 5,
+      "fields": {
+        "question": 2,
+        "choice_text": "Flask",
+        "votes": 70
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 6,
+      "fields": {
+        "question": 2,
+        "choice_text": "FastAPI",
+        "votes": 40
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 7,
+      "fields": {
+        "question": 3,
+        "choice_text": "PostgreSQL",
+        "votes": 100
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 8,
+      "fields": {
+        "question": 3,
+        "choice_text": "MySQL",
+        "votes": 80
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 9,
+      "fields": {
+        "question": 3,
+        "choice_text": "SQLite",
+        "votes": 60
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 10,
+      "fields": {
+        "question": 4,
+        "choice_text": "Windows",
+        "votes": 110
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 11,
+      "fields": {
+        "question": 4,
+        "choice_text": "Linux",
+        "votes": 150
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 12,
+      "fields": {
+        "question": 4,
+        "choice_text": "MacOS",
+        "votes": 70
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 13,
+      "fields": {
+        "question": 5,
+        "choice_text": "VS Code",
+        "votes": 200
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 14,
+      "fields": {
+        "question": 5,
+        "choice_text": "PyCharm",
+        "votes": 90
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 15,
+      "fields": {
+        "question": 5,
+        "choice_text": "IntelliJ IDEA",
+        "votes": 50
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 16,
+      "fields": {
+        "question": 6,
+        "choice_text": "AWS",
+        "votes": 150
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 17,
+      "fields": {
+        "question": 6,
+        "choice_text": "Google Cloud",
+        "votes": 120
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 18,
+      "fields": {
+        "question": 6,
+        "choice_text": "Azure",
+        "votes": 80
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 19,
+      "fields": {
+        "question": 7,
+        "choice_text": "Git",
+        "votes": 250
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 20,
+      "fields": {
+        "question": 7,
+        "choice_text": "SVN",
+        "votes": 30
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 21,
+      "fields": {
+        "question": 7,
+        "choice_text": "Mercurial",
+        "votes": 20
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 22,
+      "fields": {
+        "question": 8,
+        "choice_text": "React",
+        "votes": 180
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 23,
+      "fields": {
+        "question": 8,
+        "choice_text": "Angular",
+        "votes": 70
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 24,
+      "fields": {
+        "question": 8,
+        "choice_text": "Vue",
+        "votes": 90
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 25,
+      "fields": {
+        "question": 9,
+        "choice_text": "Spring Boot",
+        "votes": 100
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 26,
+      "fields": {
+        "question": 9,
+        "choice_text": "Express",
+        "votes": 80
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 27,
+      "fields": {
+        "question": 9,
+        "choice_text": "Django",
+        "votes": 120
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 28,
+      "fields": {
+        "question": 10,
+        "choice_text": "Object-Oriented Programming",
+        "votes": 150
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 29,
+      "fields": {
+        "question": 10,
+        "choice_text": "Functional Programming",
+        "votes": 100
+      }
+    },
+    {
+      "model": "polls.choice",
+      "pk": 30,
+      "fields": {
+        "question": 10,
+        "choice_text": "Procedural Programming",
+        "votes": 50
+      }
+    }
+  ]
+  

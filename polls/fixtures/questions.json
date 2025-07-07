@@ -1,0 +1,243 @@
+[
+    {
+      "model": "polls.question",
+      "pk": 1,
+      "fields": {
+        "question_text": "What is your favorite programming language?",
+        "pub_date": "2025-07-07T10:00:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 2,
+      "fields": {
+        "question_text": "What is your favorite web framework?",
+        "pub_date": "2025-07-06T15:30:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 3,
+      "fields": {
+        "question_text": "What is your favorite database?",
+        "pub_date": "2025-07-05T12:00:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 4,
+      "fields": {
+        "question_text": "What is your favorite operating system?",
+        "pub_date": "2025-07-04T18:45:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 5,
+      "fields": {
+        "question_text": "What is your preferred development environment?",
+        "pub_date": "2025-07-03T09:15:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 6,
+      "fields": {
+        "question_text": "What is your favorite cloud service provider?",
+        "pub_date": "2025-07-02T14:20:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 7,
+      "fields": {
+        "question_text": "What is your preferred version control system?",
+        "pub_date": "2025-07-01T20:10:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 8,
+      "fields": {
+        "question_text": "What is your favorite front-end framework?",
+        "pub_date": "2025-06-30T11:50:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 9,
+      "fields": {
+        "question_text": "What is your favorite back-end framework?",
+        "pub_date": "2025-06-29T16:35:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 10,
+      "fields": {
+        "question_text": "What is your favorite programming paradigm?",
+        "pub_date": "2025-06-28T08:25:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 11,
+      "fields": {
+        "question_text": "What is your favorite software testing tool?",
+        "pub_date": "2025-06-27T13:40:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 12,
+      "fields": {
+        "question_text": "What is your favorite CI/CD tool?",
+        "pub_date": "2025-06-26T17:10:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 13,
+      "fields": {
+        "question_text": "What is your favorite machine learning library?",
+        "pub_date": "2025-06-25T10:00:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 14,
+      "fields": {
+        "question_text": "What is your favorite data visualization tool?",
+        "pub_date": "2025-06-24T15:30:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 15,
+      "fields": {
+        "question_text": "What is your favorite text editor?",
+        "pub_date": "2025-06-23T12:00:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 16,
+      "fields": {
+        "question_text": "What is your favorite mobile development framework?",
+        "pub_date": "2025-06-22T18:45:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 17,
+      "fields": {
+        "question_text": "What is your favorite containerization tool?",
+        "pub_date": "2025-06-21T09:15:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 18,
+      "fields": {
+        "question_text": "What is your favorite monitoring tool?",
+        "pub_date": "2025-06-20T14:20:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 19,
+      "fields": {
+        "question_text": "What is your favorite logging tool?",
+        "pub_date": "2025-06-19T20:10:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 20,
+      "fields": {
+        "question_text": "What is your favorite API testing tool?",
+        "pub_date": "2025-06-18T11:50:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 21,
+      "fields": {
+        "question_text": "What is your favorite web server?",
+        "pub_date": "2025-06-17T16:35:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 22,
+      "fields": {
+        "question_text": "What is your favorite programming book?",
+        "pub_date": "2025-06-16T08:25:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 23,
+      "fields": {
+        "question_text": "What is your preferred agile methodology?",
+        "pub_date": "2025-06-15T13:40:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 24,
+      "fields": {
+        "question_text": "What is your favorite programming podcast?",
+        "pub_date": "2025-06-14T17:10:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 25,
+      "fields": {
+        "question_text": "What is your favorite programming YouTube channel?",
+        "pub_date": "2025-06-13T10:00:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 26,
+      "fields": {
+        "question_text": "What is your favorite programming subreddit?",
+        "pub_date": "2025-06-12T15:30:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 27,
+      "fields": {
+        "question_text": "What is your favorite programming community?",
+        "pub_date": "2025-06-11T12:00:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 28,
+      "fields": {
+        "question_text": "What is your favorite programming meme?",
+        "pub_date": "2025-06-10T18:45:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 29,
+      "fields": {
+        "question_text": "What is your favorite programming hackathon?",
+        "pub_date": "2025-06-09T09:15:00Z"
+      }
+    },
+    {
+      "model": "polls.question",
+      "pk": 30,
+      "fields": {
+        "question_text": "What is your favorite programming conference?",
+        "pub_date": "2025-06-08T14:20:00Z"
+      }
+    }
+  ]
+  

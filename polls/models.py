@@ -1,6 +1,9 @@
+import datetime
+
 # Django 提供的模块，用于定义模型。
 # 模型是数据库表的抽象表示，通过模型定义表的结构和字段。
 from django.db import models
+from django.utils import timezone
 
 # 定义一个名为 Question 的模型类，用来表示数据库中的一个表。
 # 每个模型类必须继承自 models.Model，以便 Django 的 ORM 能够识别它。
@@ -21,6 +24,12 @@ class Question(models.Model):
     # 这个描述会显示在 Django Admin 后台中。
     pub_date = models.DateTimeField("date published")
 
+    def was_published_recently(self):
+        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+
+    # 定义模型实例的字符串表示，返回一个易读的字段值。
+    def __str__(self):
+        return self.question_text
 
 class Choice(models.Model):
     # 定义一个字段，用于表示选项所属的问题。
@@ -33,3 +42,7 @@ class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
+
+    # 定义模型实例的字符串表示，返回一个易读的字段值。
+    def __str__(self):
+        return self.choice_text
