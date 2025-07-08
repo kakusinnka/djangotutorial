@@ -5,6 +5,8 @@ from django.urls import path
 # 导入当前应用中的 views.py 文件。
 from . import views
 
+app_name = "polls"
+
 # Django 中的 URL 配置列表。
 # 这是一个 Python 列表，其中每个元素定义一个 URL 路径及其对应的处理逻辑。
 # Django 会根据 urlpatterns 来匹配用户请求的 URL。

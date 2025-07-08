@@ -1,8 +1,9 @@
 # Django 提供的一个类，用于构建 HTTP 响应。
 # 它可以返回 HTML、纯文本或其他类型的内容作为响应。
 # 在这个例子中，HttpResponse 用于返回一个简单的文本响应。
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.template import loader
+from django.shortcuts import render
 
 from .models import Question
 
@@ -19,7 +20,11 @@ def index(request):
     return HttpResponse(template.render(context, request))
 
 def detail(request, question_id):
-    return HttpResponse("You're looking at question %s." % question_id)
+    try:
+        question = Question.objects.get(pk=question_id)
+    except Question.DoesNotExist:
+        raise Http404("Question does not exist")
+    return render(request, "polls/detail.html", {"question": question})
 
 
 def results(request, question_id):
