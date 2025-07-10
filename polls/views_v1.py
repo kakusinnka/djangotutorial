@@ -1,42 +1,36 @@
-from django.utils import timezone
-
+# Django 提供的一个类，用于构建 HTTP 响应。
+# 它可以返回 HTML、纯文本或其他类型的内容作为响应。
+# 在这个例子中，HttpResponse 用于返回一个简单的文本响应。
 from django.db.models import F
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, Http404
+from django.template import loader
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
-from django.views import generic
 
 from .models import Choice, Question
 
+# Django 中的视图函数负责处理用户的 HTTP 请求。
+# 它接收一个参数 request，这是 Django 自动传入的请求对象，包含请求的所有信息（如方法、URL、头部数据等）。
+def index(request):
+    # 结果是一个包含最近发布的 5 个问题的 QuerySet 对象。
+    latest_question_list = Question.objects.order_by("-pub_date")[:5]
+    # 加载名为 polls/index.html 的模板文件。
+    template = loader.get_template("polls/index.html")
+    # 将获取到的问题列表传递给模板，渲染出 HTML 页面。
+    context = {"latest_question_list": latest_question_list}
+    # 返回渲染后的 HTML 页面作为 HTTP 响应。
+    return HttpResponse(template.render(context, request))
 
-class IndexView(generic.ListView):
-    template_name = "polls/index.html"
-    # get_queryset 的返回值 会自动赋值给 context_object_name 指定的变量名称
-    context_object_name = "latest_question_list"
+def detail(request, question_id):
+    try:
+        question = Question.objects.get(pk=question_id)
+    except Question.DoesNotExist:
+        raise Http404("Question does not exist")
+    return render(request, "polls/detail.html", {"question": question})
 
-    def get_queryset(self):
-        """Return the last five published questions."""
-        return Question.objects.filter(pub_date__lte=timezone.now()).order_by("-pub_date")[
-            :5
-        ]
-
-
-class DetailView(generic.DetailView):
-    # DetailView 默认使用 pk 参数来查询对象：
-    # question = Question.objects.get(pk=pk)
-    model = Question
-    template_name = "polls/detail.html"
-
-    def get_queryset(self):
-        """
-        Excludes any questions that aren't published yet.
-        """
-        return Question.objects.filter(pub_date__lte=timezone.now())
-
-class ResultsView(generic.DetailView):
-    model = Question
-    template_name = "polls/results.html"
-
+def results(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    return render(request, "polls/results.html", {"question": question})
 
 def vote(request, question_id):
     # 确保用户提交的 question_id 对应的问题存在。

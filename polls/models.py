@@ -24,8 +24,10 @@ class Question(models.Model):
     # 这个描述会显示在 Django Admin 后台中。
     pub_date = models.DateTimeField("date published")
 
+    # 检查 pub_date 是否在过去一天之后
     def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
     # 定义模型实例的字符串表示，返回一个易读的字段值。
     def __str__(self):
