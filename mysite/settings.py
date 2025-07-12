@@ -54,7 +54,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [], # 项目全局模板目录
+        'DIRS': [BASE_DIR / "templates"], # 项目全局模板目录
         'APP_DIRS': True, # 自动查找应用中的 templates 文件夹
         'OPTIONS': {
             'context_processors': [

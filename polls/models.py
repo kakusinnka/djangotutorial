@@ -1,5 +1,6 @@
 import datetime
 
+from django.contrib import admin
 # Django 提供的模块，用于定义模型。
 # 模型是数据库表的抽象表示，通过模型定义表的结构和字段。
 from django.db import models
@@ -25,11 +26,20 @@ class Question(models.Model):
     pub_date = models.DateTimeField("date published")
 
     # 检查 pub_date 是否在过去一天之后
+    @admin.display(
+        # 指定字段的显示样式为布尔值（True/False）。
+        boolean=True,
+        # 指定字段的排序依据。
+        ordering="pub_date",
+        # 设置字段在后台列表页面中的列标题。
+        description="Published recently?",
+    )
     def was_published_recently(self):
         now = timezone.now()
         return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
     # 定义模型实例的字符串表示，返回一个易读的字段值。
+    # 管理“更改列表”页面，默认情况下，Django 会显示每个对象的 str()
     def __str__(self):
         return self.question_text
 
