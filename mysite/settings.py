@@ -33,6 +33,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     # 用于管理静态文件的框架。
     'django.contrib.staticfiles',
+
+    # Debug Toolbar
+    'debug_toolbar',
 ]
 
 # 定义中间件的列表。
@@ -45,10 +48,21 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    #  Debug Toolbar
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 # 定义了 Django 项目的主 URL 配置文件路径。
 ROOT_URLCONF = 'mysite.urls'
+
+# INTERNAL_IPS 用于定义“内部 IP”，通常用来限制调试工具的显示范围。
+# 只有来自这些 IP 地址的请求才能访问某些调试功能。
+INTERNAL_IPS = [
+    # ...
+    "127.0.0.1",
+    # ...
+]
 
 # 配置模板引擎的选项。
 TEMPLATES = [
