@@ -18,4 +18,5 @@ class PollsConfig(AppConfig):
     # 'polls':
     # 表示这个应用的名称是 polls。
     # Django 使用这个名称来标识应用，并在 INSTALLED_APPS 中引用它。
-    name = 'polls'
+    name = 'django_polls'
+    label = "polls"

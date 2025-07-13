@@ -19,7 +19,7 @@ ALLOWED_HOSTS = []
 # 自定义应用需要手动添加到此列表中。
 INSTALLED_APPS = [
     # 包含 polls 应用程序
-    "polls.apps.PollsConfig",
+    "django_polls.apps.PollsConfig",
 
     # 管理站点。
     'django.contrib.admin',
